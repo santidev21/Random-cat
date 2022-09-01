@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API REST</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the random cats page!</h1>
+        <p>Enjoy looking at pictures of cats! If you have a favorite you can save it.</p> 
+
+        <section id="randomMichis">
+            <article>
+                <img id="img1" alt="Random cat picture">
+                <button class="favBtn1 button">Add to favorites.</button>
+            </article>
+            <article>
+                <img id="img2" alt="Random cat picture"> 
+                <button class="favBtn2 button">Add to favorites.</button>
+            </article>           
+            <button class="anotherBtn button">Another cats</button>
+        </section>
+        <h2>Favorite cats</h2>
+        <section id="uploadMichi">
+            <h2>Uplad the picture of your michi</h2>
+            <form action="" id="uploadForm">
+                <input id="file" type="file" name="file">
+                <button type="button" id="uploadBtn">Upload</button>
+            </form>
+        </section>
+        <section id="favoritesMichis">
+        </section>
+        <span id="error"></span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
