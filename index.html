@@ -15,27 +15,28 @@
     <div class="container">
         <h1>Welcome to the random cats page!</h1>
         <p>Enjoy looking at pictures of cats! If you have a favorite you can save it.</p> 
-
-        <section id="randomMichis">
-            <article>
-                <img id="img1" alt="Random cat picture">
-                <button class="favBtn1 button">Add to favorites.</button>
-            </article>
-            <article>
-                <img id="img2" alt="Random cat picture"> 
-                <button class="favBtn2 button">Add to favorites.</button>
-            </article>           
-            <button class="anotherBtn button">Another cats</button>
+        <section id="containerRandom" class="containerCard">
+            <div>
+                <article class="card">
+                    <img class="catPicture" id="img1" alt="Random cat picture">
+                    <img class="Btn favBtn1" src="./assets/fav.png" alt="favorite button">
+                </article>
+                <article class="card">
+                    <img class="catPicture" id="img2" alt="Random cat picture">
+                    <img class="Btn favBtn2" src="./assets/fav.png" alt="favorite button">
+                </article>                           
+            </div>
+            <img class="randomButton" src="./assets/random.png" alt="Randomize button">  
         </section>
         <h2>Favorite cats</h2>
-        <section id="uploadMichi">
+        <section id="favoritesMichis" class="containerCard">
+        </section>
+        <section id="uploadMichi" class="containerCard">
             <h2>Uplad the picture of your michi</h2>
             <form action="" id="uploadForm">
                 <input id="file" type="file" name="file">
                 <button type="button" id="uploadBtn">Upload</button>
             </form>
-        </section>
-        <section id="favoritesMichis">
         </section>
         <span id="error"></span>
     </div>
